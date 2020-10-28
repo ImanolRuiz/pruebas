@@ -19,6 +19,8 @@ jobs:
           failIf: new
           # Additional arguments to pass to flake8, default "." (current directory)
           args: "--ignore=E121,E123 ."
+      - name: Install flake8
+        run: pip install flake8
       - name: Run flake8
         uses: suo/flake8-github-action@releases/v1
         with:
