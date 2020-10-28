@@ -1,7 +1,6 @@
 on: [pull_request]
 name: flake8_py3
 
-
 jobs:
   flake8_py3:
     runs-on: ubuntu-latest
