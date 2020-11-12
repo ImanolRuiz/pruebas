@@ -20,7 +20,6 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=79 --statistics
     - name: Comments Lintly-Flake8
       uses: grantmcconnaughey/lintly-flake8-github-action@v1.0
-      if: github.event_name == 'pull_request'
       with:
         # The GitHub API token to create reviews with
         token: ${{ secrets.GITHUB_TOKEN }}
